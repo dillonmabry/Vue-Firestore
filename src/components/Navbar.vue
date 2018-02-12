@@ -7,7 +7,6 @@
                   <li v-if="isLogin"><span class="email">{{currentUser}}</span></li>
                   <li v-if="isLogin"><router-link to="/">Dashboard</router-link></li>
                   <li v-if="!isLogin"><router-link to="/login">Login</router-link></li>
-                  <li v-if="!isLogin"><router-link to="/register">Register</router-link></li>
                   <li v-if="isLogin"><a v-on:click="logout">Logout</a></li>
                   <!-- <li v-if="isLogin"><button v-on:click="logout" class="btn">Logout</button></li> -->
               </ul>
